@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Loja_da_Angela.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <script src="http://localhost:53855/Scripts/jquery-3.5.1.min.js"></script>
+    <script src="http://localhost:53855/Content/MyCSS/script.js"></script>
+    <link href="http://localhost:53855/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://localhost:53855/Content/MyCSS/style.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light navigation">
+                <a class="navbar-brand" href="/PaginaPrincipal.aspx">
+                    <img src="/Content/MyCSS/Logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto main-nav ">
+
+
+
+                        <asp:ContentPlaceHolder runat="server" ID="CPT">
+                            <li class="nav-item dropdown dropdown-slide">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin <span><i class="fa fa-angle-down"></i></span>
+                                </a>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/ClientePL/EditarClientes.aspx">Editar clientes</a>
+                                    <a class="dropdown-item" href="/CategoriaPL/NovaCategoria.aspx">Adicionar uma categoria</a>
+                                    <a class="dropdown-item" href="/CategoriaPL/EditCategoria.aspx">Editar categorias</a>
+                                    <a class="dropdown-item" href="/ProdutoPL/MostrarProdutos.aspx">Mostrar todos os produtos</a>
+
+
+                                </div>
+                            </li>
+                            
+                        </asp:ContentPlaceHolder>
+                        <% if (Session["role"] == null)
+                            {%>
+
+   
+                            <li><a href="/Authentication/Login.aspx" class="nav-link login-button">Login/Registo</a></li>
+
+
+                        <%}
+                            else
+                            { %>
+                        <li class="nav-item dropdown dropdown-slide">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Area Cliente<span><i class="fa fa-angle-down"></i></span>
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/ClientePL/Area_Cliente.aspx">Editar Perfil</a>
+                                <a class="dropdown-item" href="/ProdutoPL/MostrarProdutosCliente.aspx">Os meus produtos</a>
+                                <a class="dropdown-item" href="/Favoritos/Favoritos.aspx">Os meus favoritos</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-slide">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Mensagens <span><i class="fa fa-angle-down"></i></span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/ClientePL/Emails.aspx">Mensagens enviadas</a>
+                                <a class="dropdown-item" href="/ClientePL/MensagensRecebidas.aspx">Mensagens recebidas</a>
+                            </div>
+
+                        </li>
+
+
+
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto mt-10">
+                        <li class="nav-item">
+
+
+                            <ul class="navbar-nav ml-auto mt-10">
+
+                                <li class="nav-item dropdown dropdown-slide" id="ASD">
+
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <asp:Label Text="asd" ID="LL" runat="server" /><span><i class="fa fa-angle-down"></i></span>
+                                    </a>
+
+                                    <div class="dropdown-menu">
+                                        <asp:Button ID="BTL" Text="Logout" CssClass="dropdown-item" runat="server" OnClick="BTL_Click" />
+                                        <asp:Button ID="BTN" CssClass="dropdown-item" Text="Novo Produto" runat="server" OnClick="BTN_Click" />
+                                    </div>
+                                </li>
+                                
+
+                            </ul>
+
+                            <asp:HyperLink NavigateUrl="~/Authentication/Login.aspx" runat="server" />
+                        </li>
+
+                        <% }%>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+        <div class="jumbotron">
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+</body>
+</html>
+
