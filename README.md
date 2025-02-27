@@ -3,24 +3,25 @@
 
 # 🎓 PAP - WhiteCastelSellers
 
-WhiteCastelSellers foi um projeto desenvolvido no final do meu curso de Programador Informático na Escola Amato Lusitano, parte do grupo de escolas AEAL.
-# 🎯 Objetivo
+WhiteCastelSellers was a project developed at the end of my Computer Programming course at Escola Amato Lusitano, part of the AEAL school group.
+# 🎯 Objective
 
-O principal objetivo deste website é criar uma plataforma intuitiva que facilite a compra e venda de roupa em segunda mão, promovendo a reutilização e a sustentabilidade no setor da moda.
-# ⚙️ Funcionalidades
+The main goal of this website is to create an intuitive platform that facilitates the buying and selling of second-hand clothing, promoting reuse and sustainability in the fashion industry.
+# ⚙️ Features
 
- ✔️ Filtros avançados para selecionar artigos 📌
- ✔️ Sistema de mensagens com envio automático de e-mail para o recetor 📩
-# 🛠️ Tecnologias Utilizadas
+ ✔️ Advanced filters to select items 📌
+ 
+ ✔️ Messaging system with automatic email sending to the recipient 📩
+# 🛠️ Technologies Used
 
-🔹Este projeto foi desenvolvido no Visual Studio 2019, utilizando ASP.NET, com ligação a uma base de dados SQL, otimizando seu desempenho na plataforma Microsoft SQL Server Management Studio 2018.
-# 💻 Linguagens Utilizadas
+🔹This project was developed in Visual Studio 2019, using ASP.NET, with a connection to an SQL database, optimizing its performance on Microsoft SQL Server Management Studio 2018.
+# 💻 Programming Languages
 ### 🖥️ C#
 
- 🔹 Usado para a programação do back-end do website ⚙️
+ 🔹 Used for the back-end programming of the website ⚙️
 ### 🎨 HTML/CSS
 
- 🔹 Responsável pela estrutura e design das páginas 🌐
+🔹 Responsible for the structure and design of the pages 🌐
  ### 🗄️ MySQL
 
- 🔹 Utilizado para a criação e gestão das tabelas da base de dados, incluindo Stored Procedures 🏛️
+ 🔹 Used for the creation and management of database tables, including Stored Procedures 🏛️
