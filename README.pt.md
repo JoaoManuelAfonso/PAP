@@ -1,4 +1,4 @@
-🌍 **Languages:**  
+🌍 **Línguas:**  
 [English](README.md) | [Português](README.pt.md)
 
 # 🎓 PAP - WhiteCastelSellers
