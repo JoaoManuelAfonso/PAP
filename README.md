@@ -1,3 +1,6 @@
+🌍 **Languages:**  
+[English](README.md) | [Português](README.pt.md)
+
 # 🎓 PAP - WhiteCastelSellers
 
 WhiteCastelSellers foi um projeto desenvolvido no final do meu curso de Programador Informático na Escola Amato Lusitano, parte do grupo de escolas AEAL.
